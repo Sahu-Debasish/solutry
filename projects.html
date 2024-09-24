@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECTS</title>
+    <style>
+        /* General styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .container {
+            max-width: 1200px;
+            width: 90%;
+            margin: 40px auto;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 48px;
+            color: #333;
+            margin-bottom: 40px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            position: relative;
+            display: inline-block;
+        }
+
+        h1::before {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            width: 100px;
+            height: 3px;
+            background-color: #3498db;
+            transform: translateX(-50%);
+        }
+
+        /* Websites grid styling */
+        .websites {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 30px;
+            justify-items: center;
+        }
+
+        /* Website card styling */
+        .website {
+            position: relative;
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            overflow: hidden;
+            background-color: #fff;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            transition: transform 0.4s ease, box-shadow 0.3s ease;
+            margin-bottom: 20px;
+        }
+
+        /* On hover, the card rises and shadows deepen */
+        .website:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .website img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-bottom: 2px solid #ddd;
+            transition: transform 0.4s ease;
+        }
+
+        /* On hover, image zooms in slightly */
+        .website:hover img {
+            transform: scale(1.05);
+        }
+
+        /* Label on top of each website */
+        .website-title {
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* Live website button */
+        .live-button {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            margin-top: 10px;
+            border-radius: 25px;
+            text-transform: uppercase;
+            font-size: 14px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .live-button:hover {
+            background-color: #2c82c9;
+        }
+
+        /* Footer styling */
+        footer {
+            margin-top: 50px;
+            font-size: 14px;
+            color: #777;
+        }
+
+        footer a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive adjustments */
+        @media screen and (max-width: 768px) {
+            h1 {
+                font-size: 36px;
+            }
+
+            .website-title {
+                font-size: 16px;
+            }
+
+            .live-button {
+                font-size: 12px;
+                padding: 8px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>SOME WEBSITES</h1>
+        <div class="websites">
+            <!-- Website 1 -->
+            <div class="website">
+                <img src="/website1.png" alt="Website 1 Screenshot">
+                <div class="website-title">Website 1</div>
+                <a href="https://healthcare-by-s2dfusion.netlify.app/" target="_blank">
+                    <button class="live-button">See Live Website</button>
+                </a>
+            </div>
+
+            <!-- Website 2 -->
+            <div class="website">
+                <img src="/website2.png" alt="Website 2 Screenshot">
+                <div class="website-title">Website 2</div>
+                <a href="https://demo-by-s2d.netlify.app/" target="_blank">
+                    <button class="live-button">See Live Website</button>
+                </a>
+            </div>
+
+            <!-- Website 3 -->
+            <div class="website">
+                <img src="/website3.png" alt="Website 3 Screenshot">
+                <div class="website-title">Website 3</div>
+                <a href="https://medicalwebsite-by-s2d.netlify.app/" target="_blank">
+                    <button class="live-button">See Live Website</button>
+                </a>
+            </div>
+
+            <!-- Website 4 -->
+            <div class="website">
+                <img src="/website4.png" alt="Website 4 Screenshot">
+                <div class="website-title">Website 4</div>
+                <a href="https://dental-s2dfusion.netlify.app/" target="_blank">
+                    <button class="live-button">See Live Website</button>
+                </a>
+            </div>
+
+            <!-- Website 5 -->
+            <div class="website">
+                <img src="/website5.png" alt="Website 5 Screenshot">
+                <div class="website-title">Website 5</div>
+                <a href="https://healthcaress.netlify.app/" target="_blank">
+                    <button class="live-button">See Live Website</button>
+                </a>
+            </div>
+
+            <!-- Website 6 -->
+            <div class="website">
+                <img src="/website6.png" alt="Website 6 Screenshot">
+                <div class="website-title">Website 6</div>
+                <a href="https://alkaison.github.io/Health-Plus/" target="_blank">
+                    <button class="live-button">See Live Website</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        Developed by <a href="https://s2dfusion.in">S2D FUSION</a>
+    </footer>
+
+</body>
+</html>
